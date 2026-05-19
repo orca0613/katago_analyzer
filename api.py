@@ -12,7 +12,7 @@ headers = {
 }
 
 def get_unanalyzed_sgf_data():
-  url = f"{localhost}/sgf-data/get-unanalyzed"
+  url = f"{api_url}/sgf-data/get-unanalyzed"
   response = requests.get(url=url, headers=headers)
   status_code = response.status_code
   if status_code == 200:
@@ -25,7 +25,7 @@ def save_analyzed_data(data, sgf_index):
     "data": data,
     "sgfIndex": sgf_index
   }
-  url = f"{localhost}/katago-analysis/save"
+  url = f"{api_url}/katago-analysis/save"
   response = requests.post(url=url, headers=headers, json=body)
   status_code = response.status_code
   if status_code == 200:
