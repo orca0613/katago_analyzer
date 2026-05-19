@@ -1,0 +1,5 @@
+{
+    "katago": "/Users/orca/KataGo/cpp/katago",
+    "model": "/Users/orca/KataGo/cpp/kata1-b18c384nbt-s7980462336-d3786193327.bin.gz",
+    "config": "/Users/orca/KataGo/cpp/configs/analysis_example.cfg"
+}
